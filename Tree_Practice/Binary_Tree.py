@@ -14,6 +14,12 @@ Traversal Techniques
 
 Since BST is arranged as left part < central part < right part, inorder traversal automatically sorts entries while removing duplicates
 If entries are strings or names, then they are sorted alphabetically using BST inorder traversal
+
+
+The height of the node is the distance between the node and the farthest leaf node
+So, height of a leaf node is 0, the layer above it is 1 and so on.
+
+Level on the other hand is counted top down, i.e root node is level 0, the next one is level 1 and so on.
 '''
 
 class Binary_Search_Tree_Node:
