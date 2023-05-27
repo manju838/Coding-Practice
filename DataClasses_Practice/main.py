@@ -1,0 +1,1 @@
+from dataclasses import dataclass # Useful when dealing with Databased classes

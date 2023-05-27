@@ -1,0 +1,35 @@
+Dunder Methods:
+
+In Python, methods with double underscores on both sides of the name, such as __init__, __repr__, __eq__, are special methods 
+or dunder (double underscore) methods, also known as magic methods or special methods.
+These special methods define the behavior of Python classes and objects in various contexts.
+They are automatically invoked by specific language features or operations.
+
+__init__(self): Initializer method. It is called when an object is created from the class and allows you to perform any necessary initialization steps.
+__repr__(self): String representation method. It returns a string that represents the object (When an obj is initialised and printed, Python points to an object at some address in terminal but doesn't say what that obj is)
+__str__(self): String conversion method.It returns a string representation of the object and is intended to be more user-friendly than __repr__()
+__eq__(self, other): Equality comparison method. It compares the object with another object and returns True if they are considered equal.
+__lt__(self, other): Less than method.
+__le__(self, other): Less than and equal to method.
+__gt__(self, other): Greater than method.
+__ge__(self, other): Greater than and equal to method.
+__len__(self): Length method. It returns the length of the object.
+__post_init__(self): Post Initialisation method. Does additional initialisation after __init__ fn.
+
+__all__ is a list that includes the names of several objects, functions, and variables.
+
+Classes can be data focussed (storing and retrieving data) or functionality based (call functions). 
+Dataclasses module is very useful when dealing with Databased classes
+Ref: https://www.youtube.com/watch?v=ojrbuVKblew
+
+
+Type hints:
+    Type hints in python are annotations that indicate the expected data type of a function’s arguments and return value
+    typing module is used to add type hints.
+        typing.Union : Indicates that a function argument or return value can be of multiple types
+            Eg: a: Union[int, float]
+        typing.Optional : Indicates that a function argument is optional.
+            Eg: name: Optional[str] = None
+        typing.List: A type hint from the typing module that represents a list of a specific type.
+            Eg: numbers: List[int]
+        

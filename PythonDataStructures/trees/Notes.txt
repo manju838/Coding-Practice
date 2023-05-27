@@ -1,0 +1,64 @@
+Trees:
+
+    Ref: https://runestone.academy/ns/books/published/pythonds/Trees/ExamplesofTrees.html
+
+    Terminology:
+        Node: A node is a fundamental part of a tree.
+        Edge: An edge connects two nodes to show that there is a relationship between them. Every node(except root node) has exactly 1 edge.
+        Root: The root of the tree is the only node in the tree that has no incoming edges.
+        Children: set of nodes that have incoming edges from the same node
+        Parent: A node is the parent of all the nodes it connects to with outgoing edges.
+        Sibling: Nodes in the tree that are children of the same parent are said to be siblings.
+        Subtree: A subtree is a set of nodes and edges comprised of a parent and all the descendants of that parent.
+        Leaf: A leaf node is a node that has no children
+        Level/depth: The level of a node,n is the number of edges on the path from the root node to n.
+        Height: The height of a tree is equal to the maximum level of any node in the tree. 
+
+    Definition: A tree is either empty or consists of a root and zero or more subtrees
+
+                root
+                    |__Subtree1
+                    |__Subtree2
+                    |__Subtree3
+    
+    Variants of trees:
+        There are many variants of trees (Ref: https://www.geeksforgeeks.org/types-of-binary-tree/)
+
+        Trees
+            |_____Binary Tree: (Atmost 2 nodes)
+            |      |__[Based on no.of children]
+            |      |            |_____Full Binary Tree /Proper Binary Tree: (Every node has 0 or 2 children)
+            |      |            |_____Degenerate /Pathological Binary Tree: (Every node has one child so resembles linked list)
+            |      |            |_____Skewed Binary Tree: (Degenerate Tree dominated by left or right nodes)
+            |      |                                |_____Left-Skewed Binary Tree: (Skewed tree with left node dominance)
+            |      |                                |_____Right-Skewed Binary Tree: (Skewed tree with right node dominance)
+            |      |__[Based on completion of levels]
+            |      |                |_____Complete Binary Tree: (All internal levels are completely filled i.e have 2 children and last level nodes are as left as possible)
+            |      |                |_____Perfect Binary Tree: (All internal nodes have 2 children and all leaf nodes are at same level)
+            |      |                |_____Balanced Binary Tree: (Height of the tree is O(Log n) where n is the number of nodes)
+            |      |__[Based on Node Values]
+            |      |          |_____Binary Search Tree(BST): (Value of left subtree < Value of central node < Value of right subtree)
+            |      |          |_____AVL Tree: (Self balancing BST where difference between heights of left and right subtree <=1 for all nodes)
+            |      |          |_____Red Black Tree: ()
+            |      |          |_____B Tree
+            |      |          |_____B+ Tree
+            |      |          |_____Segment Tree
+
+
+
+    
+    Extra Refs:
+        https://www.freecodecamp.org/news/all-you-need-to-know-about-tree-data-structures-bceacb85490c/
+        https://www.youtube.com/watch?v=vvQezjz5rnk&list=PLM_KIlU0WoXmkV4QB1Dg8PtJaHTdWHwRS&index=21 (Advanced Data Structures playlist)
+        https://github.com/TuTomasz/Python-Datastructures/blob/master/python_datastructures/binarySearchTree.py (check if needed/not)
+
+    Note: 
+        All Complete Binary Trees are Full Binary Trees but not viceversa [since all internal levels complete,i.e have 2 nodes and leaf nodes(aligned as left as possible) have no children]
+        All Perfect Binary Trees are Complete Binary Trees and thus are Fully Binary Trees
+
+
+                   
+    
+
+
+
