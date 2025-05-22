@@ -1,6 +1,7 @@
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
         """
+        Timestamp in youtube tutorial mentioned in readme: 9:25 
         Hashmap Approach:
 
         1) Version1:
@@ -31,7 +32,6 @@ class Solution:
         - For second string decrease the frequency from the corresponding index and if the entire array is 0s then its True
         - This approach needs function alphabet2index() which is present in java (charAt() function) but not in python
         
-        Timestamp ending in youtube tutorial mentioned in readme: 18:30 
         """
         # Version1:
         if(len(s) != len(t)):

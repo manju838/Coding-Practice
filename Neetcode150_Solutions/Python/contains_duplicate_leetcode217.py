@@ -1,6 +1,8 @@
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
-        """Approach:
+        """
+        Timestamp in youtube tutorial mentioned in readme: 0:30
+        Approach:
         - Create a set(hashset in python is set) to store all no.s, if unique present then return true
         - Time Complexity: O(n) [saving every element to hashset{O(n)}, checking if element is present in hashset{n elements * O(1) for each hashset search, total n+n = O(n)}]
         - Space Complexity: O(n) [since we are saving entire nums array]
